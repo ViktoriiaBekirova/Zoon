@@ -1,0 +1,163 @@
+.basis {
+  position: relative; }
+  .basis .basis_box {
+    max-width: 1008px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center; }
+    .basis .basis_box h1 {
+      font: 42px/1.2em 'montserrat-bold', sans-serif;
+      color: #fff;
+      margin-bottom: 18px;
+      padding: 0 10%;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+      letter-spacing: -1px; }
+    .basis .basis_box p {
+      font: 16px/33px 'montserrat-regular', sans-serif;
+      color: #fff;
+      margin-bottom: 18px;
+      padding: 0 18%;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); }
+    .basis .basis_box h5 {
+      font: 13px/24px 'montserrat-bold', sans-serif;
+      color: #1F782F;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); }
+    .basis .basis_box .counter {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      width: 75%;
+      color: #fff;
+      text-align: center;
+      margin: 18px auto; }
+      .basis .basis_box .counter_row1, .basis .basis_box .counter_row2, .basis .basis_box .counter_row3, .basis .basis_box .counter_row4 {
+        width: 25%;
+        padding: 12px 0 30px;
+        border-left: 1px dotted rgba(255, 255, 255, 0.2); }
+        .basis .basis_box .counter_row1 span, .basis .basis_box .counter_row2 span, .basis .basis_box .counter_row3 span, .basis .basis_box .counter_row4 span {
+          display: block;
+          font: 70px/1em 'merriweather-bold', serif;
+          text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); }
+        .basis .basis_box .counter_row1 em, .basis .basis_box .counter_row2 em, .basis .basis_box .counter_row3 em, .basis .basis_box .counter_row4 em {
+          display: block;
+          font: 11px/18px 'montserrat-regular', sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          margin-top: 12px;
+          color: #BCBCBC;
+          color: rgba(255, 255, 255, 0.6);
+          text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); }
+      .basis .basis_box .counter_row1 {
+        border-left: none; }
+    .basis .basis_box .box {
+      display: inline-block;
+      width: 50%;
+      margin: 48px auto 18px; }
+      .basis .basis_box .box .form .form:after {
+        content: '';
+        display: table;
+        clear: both; }
+      .basis .basis_box .box .form .e-mail {
+        float: left;
+        font-size: 15px;
+        height: 54px;
+        line-height: 30px;
+        padding: 12px 15px;
+        -webkit-border-radius: 3px 0 0 3px;
+                border-radius: 3px 0 0 3px;
+        border: none;
+        background: #727272;
+        background: rgba(255, 255, 255, 0.2);
+        width: 70%; }
+      .basis .basis_box .box .form .button {
+        float: left;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 30px;
+        height: 54px;
+        padding: 12px 30px;
+        margin: 0 0 18px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+                border-radius: 0 3px 3px 0;
+        border: none;
+        background: #197C28;
+        background: #197c28;
+        color: #fff;
+        width: 30%; }
+    .basis .basis_box .social li {
+      font-size: 24px;
+      color: #fff;
+      display: inline-block;
+      margin: 0 12px;
+      padding: 0;
+      text-decoration: none; }
+      .basis .basis_box .social li a {
+        color: #fff; }
+        .basis .basis_box .social li a:hover {
+          color: #1E732D; }
+
+@media screen and (max-width: 770px) {
+  .basis .basis_box h1 {
+    font: 30px/1.2em 'montserrat-bold', sans-serif; }
+  .basis .basis_box p {
+    font: 14px/24px 'montserrat-regular', sans-serif;
+    padding: 0 10%; }
+  .basis .basis_box h5 {
+    font: 12px/24px 'montserrat-bold', sans-serif; }
+  .basis .basis_box .counter {
+    width: 80%;
+    margin: 18px auto 24px; }
+  .basis .basis_box .counter_row1, .basis .basis_box .counter_row2, .basis .basis_box .counter_row3, .basis .basis_box .counter_row4 {
+    padding: 9px 0 15px;
+    border: none; }
+    .basis .basis_box .counter_row1 span, .basis .basis_box .counter_row2 span, .basis .basis_box .counter_row3 span, .basis .basis_box .counter_row4 span {
+      font: 35px/1em 'merriweather-bold', serif; }
+    .basis .basis_box .counter_row1 em, .basis .basis_box .counter_row2 em, .basis .basis_box .counter_row3 em, .basis .basis_box .counter_row4 em {
+      font: 9px/18px 'montserrat-regular', sans-serif;
+      margin-top: 6px; }
+  .basis .basis_box .box {
+    width: 60%;
+    margin: 12px auto 0; }
+  .basis .basis_box .box .form .e-mail {
+    width: 100%;
+    margin-bottom: 24px; }
+  .basis .basis_box .box .form .button {
+    width: 100%; }
+  .basis .basis_box .social li {
+    margin: 0 8px;
+    font-size: 17px; } }
+
+@media screen and (max-width: 500px) {
+  .basis .basis_box h1 {
+    font: 25px/1.2em 'montserrat-bold', sans-serif; }
+  .basis .basis_box p {
+    font: 12px/21px 'montserrat-regular', sans-serif;
+    padding: 0 10%; }
+  .basis .basis_box h5 {
+    font: 12px/24px 'montserrat-bold', sans-serif; }
+  .basis .basis_box .counter {
+    width: 100%; }
+  .basis .basis_box .counter_row1, .basis .basis_box .counter_row2, .basis .basis_box .counter_row3, .basis .basis_box .counter_row4 {
+    padding: 9px 0 15px; }
+    .basis .basis_box .counter_row1 span, .basis .basis_box .counter_row2 span, .basis .basis_box .counter_row3 span, .basis .basis_box .counter_row4 span {
+      font: 35px/1em 'merriweather-bold', serif; }
+    .basis .basis_box .counter_row1 em, .basis .basis_box .counter_row2 em, .basis .basis_box .counter_row3 em, .basis .basis_box .counter_row4 em {
+      font: 9px/18px 'montserrat-regular', sans-serif;
+      margin-top: 6px; }
+  .basis .basis_box .box {
+    width: 80%;
+    margin: 12px auto 0; }
+  .basis .basis_box .box .form .e-mail {
+    width: 100%;
+    margin-bottom: 24px; }
+  .basis .basis_box .box .form .button {
+    width: 100%; }
+  .basis .basis_box .social li {
+    margin: 0 8px;
+    font-size: 17px; } }

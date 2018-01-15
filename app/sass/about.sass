@@ -1,0 +1,142 @@
+.about
+  position: relative
+  background: #1E732D
+  color: #fff
+  padding-top: 50px
+  padding-bottom: 72px
+  overflow: hidden
+  .row1
+    position: relative
+    margin: 0 auto
+    max-width: 880px
+    text-align: center
+    margin-bottom: 12px
+    &_aboutUs
+      position: relative
+      padding: 0 20px
+      min-height: 1px
+      .fa
+        font-size: 60px
+        margin-bottom: 18px
+        color: #0F3C17
+      h1
+        font: 30px/36px 'montserrat-bold', sans-serif
+        color: #fff
+        margin-bottom: 12px
+        padding: 0 15%
+      .lead
+        color: #fff
+        padding: 0 3%
+        font: 18px/36px 'merriweather-light', sans-serif
+        margin-bottom: 24px
+  .row2, .row3
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-wrap: nowrap
+    margin: 0 auto
+    max-width: 880px
+    text-align: center
+    margin-bottom: 12px
+
+    .row2_box1, .row3_box1
+      position: relative
+      padding: 0 20px
+      min-height: 1px
+
+      h3
+        font: 15px/24px 'montserrat-bold', sans-serif
+        color: #0C3012
+        text-transform: uppercase
+        letter-spacing: 3px
+        margin-bottom: 12px
+        text-align: left
+      p
+        font-family: 'merriweather-regular', sans-serif
+        font-weight: normal
+        font-size: 15px
+        line-height: 30px
+        text-align: justify
+    .row2_box2, .row3_box2
+      position: relative
+      padding: 0 20px
+      min-height: 1px
+      h3
+        font: 15px/24px 'montserrat-bold', sans-serif
+        color: #0C3012
+        text-transform: uppercase
+        letter-spacing: 3px
+        margin-bottom: 12px
+        text-align: left
+      p
+        font-family: 'merriweather-regular', sans-serif
+        font-weight: normal
+        font-size: 15px
+        line-height: 30px
+        text-align: justify
+
+  .row4
+    position: relative
+    padding-top: 30px
+    margin: 0 auto
+    max-width: 880px
+    text-align: center
+    &_template
+      max-width: 880px
+      padding-top: 36px
+      border-top: 1px dotted rgba(255, 255, 255, .2)
+      h2
+        font: 30px/36px 'montserrat-bold', sans-serif
+        letter-spacing: -0.5px
+        margin-bottom: 18px
+        padding: 0 15%
+      h2 a
+        color: #fff
+      .lead
+        color: #fff
+        padding: 0 8%
+        font: 18px/36px 'merriweather-light', sans-serif
+        margin-bottom: 24px
+        a, span
+          font-family: 'merriweather-regular', serif
+          color: #0C3012
+
+      .btn button
+        max-width: 350px
+        margin: 0 auto
+        background: #165622
+        color: #fff
+        padding: 1% 12%
+        font: 16px/30px 'merriweather-light', sans-serif
+        font-weight: bold
+        border: none
+        cursor: pointer
+        &:hover
+          background: #fff
+          color: #165622
+
+
+@media screen and (max-width: 770px)
+  .about .row2, .about .row3
+    flex-wrap: wrap
+    width: 70%
+  .about .row1 .row1_aboutUs
+    h1
+      font: 28px/36px 'montserrat-bold', sans-serif
+    .lead
+      font: 16px/30px 'merriweather-light', sans-serif
+  .about .row4 .row4_template h2
+    font: 26px/36px 'montserrat-bold', sans-serif
+
+
+@media screen and (max-width: 500px)
+  .about .row2, .about .row3
+    flex-wrap: wrap
+    width: 80%
+  .about .row1 .row1_aboutUs
+    h1
+      font: 25px/30px 'montserrat-bold', sans-serif
+    .lead
+      font: 16px/30px 'merriweather-light', sans-serif
+  .about .row4 .row4_template h2
+    font: 22px/30px 'montserrat-bold', sans-serif
