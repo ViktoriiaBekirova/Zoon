@@ -89,7 +89,8 @@
       max-width: 120px;
       margin: 0 auto; }
       .header .row_zoon a {
-        margin-top: 50%; }
+        margin-top: 50%;
+        max-width: 100%; }
     .header .row #btn {
       color: #fff;
       cursor: pointer;
