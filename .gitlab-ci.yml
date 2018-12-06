@@ -1,0 +1,31 @@
+stages:
+    - deploy
+
+variables:
+    RELEASE_DIR: "/var/www/bekirova/"
+    USER_SITE: "www-data"
+     
+###DEPLOY
+
+deploy-to-web-servers:
+  stage: deploy
+  script:
+    - |
+      whoami
+      echo "===>>> Deploy to production server <<<==="
+      echo "===>>> CI_PROJECT_DIR = $CI_PROJECT_DIR <<<==="
+      export dir=$(echo $CI_PROJECT_DIR | sed -n 's/.*\/\([^\/]\{1,\}\)$/\1/p')
+      sudo mkdir -p $RELEASE_DIR/$dir || sudo rm -r $RELEASE_DIR/$dir
+      sudo cp -r $CI_PROJECT_DIR/ $RELEASE_DIR
+      sudo rm $RELEASE_DIR/$dir/.gitlab-ci.yml || true
+      sudo rm -rf $RELEASE_DIR/$dir/.git || true
+      sudo rm -rf $RELEASE_DIR/$dir/.idea || true
+      sudo chown -R $USER_SITE:$USER_SITE $RELEASE_DIR
+      sudo find $RELEASE_DIR -type d -exec chmod 0775 '{}' \;
+      sudo find $RELEASE_DIR -type f -exec chmod 0664 '{}' \;
+      sudo nginx -s reload
+
+  only:
+    - master
+  tags:
+    - web-servers
