@@ -2,12 +2,12 @@
 $(function () {
     // $('#menu').slideUp();
     $('#btn').click(function (e) {
-        var $message = $('#menu');
+        let $message = $('#menu');
 
         if ($message.css('display') != 'block') {
             $message.slideDown(1000);
 
-            var yourClick = true;
+            let yourClick = true;
             $(document).bind('click.myEvent', function (e) {
                 if (!yourClick && $(e.target).closest('#menu').length == 0) {
                     $message.slideUp(1000);
@@ -18,7 +18,7 @@ $(function () {
         }
         $('.menu-link').click(function(){
             $(document).unbind('click.myEvent');
-            $( "#menu" ).slideUp(1000);
+            $message.slideUp(1000);
         });
         e.preventDefault();
     });
@@ -34,7 +34,7 @@ $(function () {
 // скрытие, появление кнопки наверх
 $(function () {
     $(window).scroll(function(){
-        var bo = $("html, body").scrollTop();
+        let bo = $("html, body").scrollTop();
         if ( bo > 200 ) {
             $("#go-top").fadeIn(1500);
         }
@@ -48,10 +48,10 @@ window.onload = function(){
 
     function timer(){
 
-        var hour = document.getElementById('hour').innerHTML;
-        var minute = document.getElementById('minute').innerHTML;
-        var second = document.getElementById('second').innerHTML;
-        var end = false;
+        let hour = document.getElementById('hour').innerHTML;
+        let minute = document.getElementById('minute').innerHTML;
+        let second = document.getElementById('second').innerHTML;
+        let end = false;
 
         if( second > 0 ) second--;
         else{
